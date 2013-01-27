@@ -52,6 +52,10 @@ GEM
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
     fssm (0.2.9)
+    handlebars_assets (0.9.0)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt
     has_scope (0.5.1)
     hike (1.2.1)
     i18n (0.6.1)
@@ -153,6 +157,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
   factory_girl
+  handlebars_assets
   inherited_resources
   jquery-rails
   pg
