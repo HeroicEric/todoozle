@@ -23,6 +23,7 @@ gem 'inherited_resources'
 
 group :test do
   gem 'factory_girl'
+  gem 'shoulda'
 end
 
 group :development, :test do
