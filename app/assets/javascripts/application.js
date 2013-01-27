@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require handlebars.runtime
+//= require handlebars
 //= require lib/ember
 //= require lib/ember-data
 //= require_self
