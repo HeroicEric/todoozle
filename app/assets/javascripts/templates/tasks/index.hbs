@@ -1,11 +1,12 @@
 <h1>Tasks</h1>
 
-<ul>
+<form>
   {{#each task in controller}}
-    <li>
+    <label {{ bindAttr class="task.complete:task-complete" }}>
+      {{view Ember.Checkbox checkedBinding="task.complete"}}
       {{#linkTo 'tasks.show' task}}
         {{ task.title }}
       {{/linkTo}}
-    </li>
+    </label>
   {{/each}}
-</ul>
+</form>
