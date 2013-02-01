@@ -1,6 +1,6 @@
 App.Router.map(function() {
   this.resource('tasks', function() {
-    this.resource('task', { path: ':task_id' });
+    this.route('show', { path: ':task_id' });
   });
 });
 

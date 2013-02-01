@@ -3,7 +3,7 @@
 <ul>
   {{#each task in controller}}
     <li>
-      {{#linkTo task task}}
+      {{#linkTo 'tasks.show' task}}
         {{ task.title }}
       {{/linkTo}}
     </li>
