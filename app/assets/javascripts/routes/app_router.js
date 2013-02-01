@@ -1,8 +1,10 @@
 App.Router.map(function() {
-  this.resource('tasks');
+  this.resource('tasks', function() {
+    this.resource('task', { path: ':task_id' });
+  });
 });
 
-App.TasksRoute = Ember.Route.extend({
+App.TasksIndexRoute = Ember.Route.extend({
   model: function() {
     return App.Task.find();
   }
